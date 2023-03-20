@@ -1,0 +1,21 @@
+package starprinting;
+
+public class Star1 {
+	int k=1;
+
+	public static void main(String[] args){
+		for(int i=1; i<=5; i++) {//row
+			for(int j=1; j<5;j++) { //space
+				//if(i==0 && j==1)
+				System.out.print(k);
+				K++;
+			}
+			System.out.println();
+			
+		}
+	}
+}
+			
+	
+
+

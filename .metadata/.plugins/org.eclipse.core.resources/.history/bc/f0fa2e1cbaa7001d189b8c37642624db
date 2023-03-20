@@ -1,0 +1,25 @@
+package Array;
+
+import java.util.Arrays;
+
+public class second_maximun_array {
+	public static void main(String[] args) {
+		 int [] x= {29,45,85,62,14,2};
+		 System.out.println(Arrays.toString(x));
+		 
+		 int max=0,smax=0;
+		 for(int i=0;i<x.length;i++) {
+			 if(max<x[i] ){
+				 smax=max;
+				 max=x[i];
+				 
+			 }
+			 else if(smax<x[i]) {
+				 smax=x[i];
+			 }
+		 }
+		 System.out.println(smax);
+
+	}
+
+}

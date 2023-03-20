@@ -1,0 +1,12 @@
+127.0.0.1 - - [17/Feb/2023:11:09:52 +0530] "GET / HTTP/1.1" 404 751
+0:0:0:0:0:0:0:1 - - [17/Feb/2023:11:09:53 +0530] "GET /web_app_7/welcome.html HTTP/1.1" 200 298
+0:0:0:0:0:0:0:1 - - [17/Feb/2023:11:09:55 +0530] "GET /favicon.ico HTTP/1.1" 404 762
+0:0:0:0:0:0:0:1 - - [17/Feb/2023:11:10:42 +0530] "GET /web_app_7/welcome.html HTTP/1.1" 200 299
+0:0:0:0:0:0:0:1 - - [17/Feb/2023:11:10:44 +0530] "GET /web_app_7/welcome.html HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [17/Feb/2023:11:10:46 +0530] "GET /web_app_7/firstServlet?firstname= HTTP/1.1" 200 -
+127.0.0.1 - - [17/Feb/2023:11:11:52 +0530] "GET / HTTP/1.1" 404 751
+0:0:0:0:0:0:0:1 - - [17/Feb/2023:11:11:53 +0530] "GET /web_app_7/welcome.html HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [17/Feb/2023:11:11:59 +0530] "GET /web_app_7/firstServlet?firstname=hi+dear HTTP/1.1" 200 -
+127.0.0.1 - - [17/Feb/2023:11:16:08 +0530] "GET / HTTP/1.1" 404 751
+0:0:0:0:0:0:0:1 - - [17/Feb/2023:11:16:09 +0530] "GET /web_app_7/welcome.html HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [17/Feb/2023:11:16:16 +0530] "GET /web_app_7/firstServlet?firstname=MD+SARFARAZ+ HTTP/1.1" 200 -

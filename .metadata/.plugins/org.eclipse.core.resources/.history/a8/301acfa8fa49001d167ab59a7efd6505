@@ -1,0 +1,33 @@
+package jdbc_demo;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.ResultSet;
+import java.sql.Statement;
+
+public class D {
+  public static void main(String[] args) {
+	  try {
+		  Connection con = DriverManager.getConnection
+				  ("jdbc:mysql://127.0.0.1/simpledb","root","test");
+		  System.out.println(con);
+		  			Statement stmnt = con.createStatement();
+		  			ResultSet result = stmnt.executeQuery
+		  ("select * from registration");
+		  			while(result.next()) {
+		  				System.out.println(result.getString(1));
+		  				System.out.println(result.getString(2));
+		  				//System.out.println(result.getString(3));
+
+
+		  			}
+		  			
+		  			con.close();
+		
+	} catch (Exception e) {
+		e.printStackTrace();
+	}
+	
+  }
+
+}

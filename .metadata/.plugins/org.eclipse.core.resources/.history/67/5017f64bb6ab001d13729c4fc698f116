@@ -1,0 +1,26 @@
+package String;
+
+import java.util.Arrays;
+
+public class ReverseString {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		String S="GeeksforGeeks";
+		char[] a=S.toCharArray();		
+		
+		
+		//String s="";
+	        int i=0;
+	        int n=a.length;
+	        while(i<n){
+	           char temp=a[i];
+	            a[i]=a[n-1];
+	            a[n-1]=temp;
+	            i++;
+	            n--;
+	}
+	        System.out.print(Arrays.toString(a));
+
+}
+}
